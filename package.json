@@ -1,0 +1,29 @@
+{
+  "name": "@rasch/argv",
+  "version": "0.1.0",
+  "description": "a command-line argument parser",
+  "type": "module",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "exports": "index.js",
+  "scripts": {
+    "clean": "rm -rf node_modules"
+  },
+  "keywords": [
+    "argv",
+    "argc",
+    "args",
+    "optparse",
+    "argparse",
+    "argument",
+    "vector"
+  ],
+  "author": "Rand Schneck <i@rasch.co>",
+  "license": "0BSD",
+  "repository": {
+    "type": "git",
+    "url": "https://git.sr.ht/~rasch/argv.git"
+  }
+}
