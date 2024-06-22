@@ -11,8 +11,16 @@
   "exports": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "clean": "rm -rf node_modules index.d.ts",
+    "clean": "rm -rf node_modules coverage index.d.ts",
+    "test": "c8 node test.js",
     "gen-types": "tsc index.js --declaration --allowJs --emitDeclarationOnly"
+  },
+  "c8": {
+    "check-coverage": "true",
+    "branches": "100",
+    "functions": "100",
+    "lines": "100",
+    "statements": "100"
   },
   "keywords": [
     "argv",
@@ -31,6 +39,8 @@
   },
   "devDependencies": {
     "@types/node": "^18.19.37",
+    "c8": "^10.1.2",
+    "fvb": "^0.1.0",
     "typescript": "^5.4.5"
   }
 }
