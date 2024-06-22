@@ -4,12 +4,15 @@
   "description": "a command-line argument parser",
   "type": "module",
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "main": "index.js",
   "exports": "index.js",
+  "types": "index.d.ts",
   "scripts": {
-    "clean": "rm -rf node_modules"
+    "clean": "rm -rf node_modules index.d.ts",
+    "gen-types": "tsc index.js --declaration --allowJs --emitDeclarationOnly"
   },
   "keywords": [
     "argv",
@@ -25,5 +28,9 @@
   "repository": {
     "type": "git",
     "url": "https://git.sr.ht/~rasch/argv.git"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.37",
+    "typescript": "^5.4.5"
   }
 }
