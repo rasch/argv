@@ -39,20 +39,20 @@ node example.js serve -v 3 -xyz --host=127.0.0.1 -p80 --no-debug -q
 ## install
 
 ```sh
-pnpm add argv
+pnpm add @rasch/argv
 ```
 
 <details><summary>npm</summary><p>
 
 ```sh
-npm install argv
+npm install @rasch/argv
 ```
 
 </p></details>
 <details><summary>yarn</summary><p>
 
 ```sh
-yarn add argv
+yarn add @rasch/argv
 ```
 
 </p></details>
