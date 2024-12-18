@@ -1,15 +1,14 @@
 {
   "name": "@rasch/argv",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "a command-line argument parser",
   "type": "module",
   "files": [
     "index.js",
     "index.d.ts"
   ],
-  "main": "index.js",
-  "exports": "index.js",
-  "types": "index.d.ts",
+  "exports": "./index.js",
+  "types": "./index.d.ts",
   "scripts": {
     "clean": "rm -rf node_modules coverage index.d.ts",
     "test": "c8 node test.js",
